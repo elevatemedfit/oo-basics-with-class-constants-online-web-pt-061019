@@ -12,6 +12,7 @@ class Shoe
 
   def brand
     @brand
+    BRANDS.uniq << brand
   end
 
   #def unique(brand)
