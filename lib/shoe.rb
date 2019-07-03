@@ -10,6 +10,10 @@ class Shoe
     BRANDS << brand
   end
 
+  def brand
+    @brand
+  end
+
   #def unique(brand)
     #BRANDS<<brand.uniq
   #end
