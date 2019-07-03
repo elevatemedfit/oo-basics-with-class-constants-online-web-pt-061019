@@ -12,7 +12,8 @@ class Shoe
 
   def unique(brand)
     BRANDS.clear.flatten << brand.uniq
-    BRANDS.flatten.size
+    BRANDS
+    #BRANDS.flatten.size
   end
 
   #def unique(brand)
