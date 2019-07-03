@@ -1,5 +1,5 @@
 class Shoe
-  attr_accessor :color, :size, :material, :condition
+  attr_accessor :color, :size, :material, :condition,:brand
   attr_reader :brand
 
   BRANDS = []
@@ -11,16 +11,9 @@ class Shoe
   end
 
   def unique(brand)
-    BRANDS.clear.flatten << @brand.uniq
+    BRANDS.clear.flatten << brand.uniq
     BRANDS.size
-    #BRANDS.flatten.size
   end
-
-  #def unique(brand)
-    #BRANDS<<brand.uniq
-  #end
-
-
 
   def cobble
     self.condition = "new"
